@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/updateContact"
+        android:title="@string/update_contact"
+        android:icon="@drawable/baseline_edit_24"
+        app:showAsAction="always"
+        android:iconTint="@color/teal_700"/>
+    <item
+        android:id="@+id/deleteContact"
+        android:title="@string/delete_contact"
+        android:icon="@drawable/baseline_delete_forever_24"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/teal_700"/>
+</menu>

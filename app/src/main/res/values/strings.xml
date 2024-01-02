@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ContactDiary</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="company">Company</string>
+    <string name="birthday">Birthday</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="added_time">Added Time</string>
+    <string name="updated_time">Updated Time</string>
+    <string name="first_last_name">First/Last Name</string>
+    <string name="update_contact">Update Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="delete_all_contact">Delete All Contact</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/primary"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5sp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_name"
+            android:textColor="@color/teal_200"
+            android:layout_marginStart="10sp"
+            android:layout_toEndOf="@+id/contact_image"
+            android:layout_toStartOf="@+id/contact_number_dial"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/contact_number_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_phone_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10sp"
+            app:tint="@color/teal_200"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

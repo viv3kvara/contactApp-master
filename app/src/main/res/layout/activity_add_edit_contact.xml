@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".AddEditContact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10sp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/profileIv"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/inputFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/first_name"
+            android:textColorHint="@color/black"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/baseline_text_fields_24"
+            android:drawablePadding="10sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/inputLastName"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/last_name"
+            android:textColorHint="@color/black"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:drawableStart="@drawable/baseline_text_fields_24"
+            android:drawablePadding="10sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/contact_number"
+            android:textColorHint="@color/black"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:drawableStart="@drawable/baseline_phone_24"
+            android:drawablePadding="10sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background_input"
+            android:hint="@string/email"
+            android:textColorHint="@color/black"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10sp"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnInsert"
+            android:onClick="checkData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20sp"
+            app:backgroundTint="@color/teal_700"
+            android:src="@drawable/baseline_person_add_24"
+            app:tint="@color/white"
+            android:contentDescription="TODO" />
+</RelativeLayout>
